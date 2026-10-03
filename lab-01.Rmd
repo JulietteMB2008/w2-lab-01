@@ -220,11 +220,11 @@ The mean statistics are larger in all settings are larger than the corresponding
 ### Exercise l.
 
 ```{r Q8}
-visitors %>% 
-  summarise(
-     __________,
-     __________,
-#  )
+visitors %>%
+  summarise( 
+     max_2021 = max(n_2021, na.rm = TRUE),
+     min_2021 = min(n_2021, na.rm = TRUE)
+  )
 ```
 
 ## Question 9
